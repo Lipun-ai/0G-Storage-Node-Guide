@@ -2,20 +2,12 @@
 
 #   **Introduction📔**
 
-</div>
-
-
------**Storage Nodes:**
-Unlike Validator Nodes that focus on securing the blockchain itself, Storage Nodes focus on managing and serving data. They are the backbone of the network's data storage capabilities, ensuring persistence and availability for long-term data storage (e.g., training datasets, large AI models). By running a storage node, you'll contribute to the decentralized storage of 0G data, making it accessible and resilient.
-
-<div align="center">
-
-#  👨🏻‍💻 **0G Storage Node Guide** 👨🏻‍💻
+#   **0G Storage Node Guide** 
 
 </div>
 
 
-# Device/System Requirements 💻
+# Device/System Requirements 
 
 ![image](https://github.com/user-attachments/assets/6f06b201-c4b1-4671-b3e1-bf1e49cb5182)
 
@@ -23,9 +15,9 @@ Unlike Validator Nodes that focus on securing the blockchain itself, Storage Nod
 
 # Pre-Requirements 🛠
 
-* Add 0G-Galileo-Testnet chain from here: https://docs.0g.ai/run-a-node/testnet-information
+* Add 0G-Galileo-Testnet chain:- https://docs.0g.ai/run-a-node/testnet-information
 
-* Take faucet: https://faucet.0g.ai/
+* Take faucet:- https://faucet.0g.ai/
 
 
 # Install All Require Dependecies
@@ -107,18 +99,9 @@ curl -o $HOME/0g-storage-node/run/config.toml https://raw.githubusercontent.com/
 ```
 nano $HOME/0g-storage-node/run/config.toml
 ```
-
-![image](https://github.com/user-attachments/assets/a513812f-177e-4a74-83a9-1548c98f4556)
-
-
 # If u want to change RPC then follow this:
 
-1. get rpc from here - https://www.astrostake.xyz/0g-status
-
-2. Chooose any rpc and edit in the `config.toml` file
-
-![image](https://github.com/user-attachments/assets/44b682a5-45ce-4fc8-8c3a-7f2355f3b9ac)
-
+get rpc from here - https://www.astrostake.xyz/0g-status
 
 # Create a Systemd Service File
 
@@ -166,9 +149,6 @@ sudo systemctl start zgs
 sudo systemctl status zgs
 ```
 
-![Screenshot 2025-05-27 190436](https://github.com/user-attachments/assets/3b01ab3f-8d43-43b3-9bf1-b2a8e870e1fe)
-
-
 * check Full Logs
 
 ```
@@ -180,9 +160,6 @@ tail -f ~/0g-storage-node/run/log/zgs.log.$(TZ=UTC date +%Y-%m-%d)
 ```
  while true; do     response=$(curl -s -X POST http://localhost:5678 -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"zgs_getStatus","params":[],"id":1}');     logSyncHeight=$(echo $response | jq '.result.logSyncHeight');     connectedPeers=$(echo $response | jq '.result.connectedPeers');     echo -e "logSyncHeight: \033[32m$logSyncHeight\033[0m, connectedPeers: \033[34m$connectedPeers\033[0m";     sleep 5; done
 ```
-
-![Screenshot 2025-05-28 155703](https://github.com/user-attachments/assets/ab97078b-2c2a-4328-aace-bc94982ab802)
-
 
 # Stop & Delete the service
 
@@ -206,11 +183,11 @@ rm -rf $HOME/0g-storage-node
 
 DONE!!
 
-👉 Join TG for more Updates: https://telegram.me/cryptogg
+ Join TG for more Updates:- https://t.me/cryptoprojectguruji
 
-If U have any issue then open a issue on this repo or Dm me on TG~
+If U have any issue then open a issue on this repo or Dm me on
 
-Thank You! Happy Coding!📈
+Thank you all
 
 
 
