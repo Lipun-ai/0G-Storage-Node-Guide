@@ -168,7 +168,10 @@ sudo systemctl status zgs
 
 ![Screenshot 2025-05-27 190436](https://github.com/user-attachments/assets/3b01ab3f-8d43-43b3-9bf1-b2a8e870e1fe)
 
-
+*create new screen
+```
+screen -S og
+````
 * check Full Logs
 
 ```
