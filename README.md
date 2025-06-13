@@ -43,7 +43,7 @@ sudo apt install curl iptables build-essential git wget lz4 jq make cmake gcc na
 ```
 curl https://sh.rustup.rs -sSf | sh
 ```
-
+enter 1
 ```
 source $HOME/.cargo/env
 ```
