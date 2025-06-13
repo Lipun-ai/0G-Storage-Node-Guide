@@ -23,7 +23,7 @@ Unlike Validator Nodes that focus on securing the blockchain itself, Storage Nod
 
 # Pre-Requirements 🛠
 
-* Add 0G-Galileo-Testnet chain from here: https://docs.0g.ai/run-a-node/testnet-information
+* Add 0G-Galileo-Testnet chain from here: https://chainscan-galileo.0g.ai/
 
 * Take faucet: https://faucet.0g.ai/
 
